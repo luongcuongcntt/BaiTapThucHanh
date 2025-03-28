@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_launcher_background"
+            android:id="@+id/image_view_project_icon"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The App Title"
+            android:layout_alignTop="@id/image_view_project_icon"
+            android:layout_toEndOf="@+id/image_view_project_icon"
+            android:id="@+id/text_view_project_title"
+            />
+        <TextView
+            android:id="@+id/text_view_project_description"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:text="This will be our description of the project"
+            android:layout_toEndOf="@+id/image_view_project_icon"
+            android:layout_below="@+id/text_view_project_title"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
